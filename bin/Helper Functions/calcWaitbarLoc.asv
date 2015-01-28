@@ -1,0 +1,19 @@
+function [locations] = calcWaitbarLoc(nBars)
+%calcWaitbarLoc.m calculates waitbar locations
+%
+%INPUTS 
+%nBars - number of waitbars
+%
+%OUTPUTS
+%locations - nBars x 4 array of locations
+%
+%ASM 10/13
+
+%get screen size
+scrSize = get(0,'screenSize');
+
+%set width and height
+width = 0.0469*scrSize(4);
+height = 0.1406*scrSize(3);
+
+%determine a
